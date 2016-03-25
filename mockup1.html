@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="resources/css/custom.css"/>
+    <link type="text/css" rel="stylesheet" href="resources/css/materialize.min.css"  media="screen,projection"/>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+
+<div id="startLayer" class="gray-layer"></div>
+<div id="titleContent" class="valign-wrapper center-align">
+    <div id="title-line" class="valign">
+        <h3 >Welcome to Dragon Force's Page</h3>
+        <h5 >This is a short description of this app</h5>
+        <button id="started" class="waves-effect waves-light btn btn-large">Getting Started</button>
+    </div>
+
+</div>
+
+
+<div id="map"></div>
+<div class="row">
+    <div class="col s12 m8 l6">
+        <div class="card white">
+            <div id="input-card" class="input-card card-content">
+                <div id="input-row" class="row">
+                    <div class="input-field col s5">
+                        <input id="start" type="text" class="validate">
+                        <label for="start">Origin</label>
+                    </div>
+                    <div class="col s2 valign-wrapper">
+
+                        <p><i class="valign material-icons small">compare_arrows</i></p>
+                    </div>
+                    <div class="input-field col s5">
+                        <input id="destination" type="text" class="validate">
+                        <label for="destination">Destination</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col l3 m4 screen-only weather-card push-l3">
+
+        <div class="card">
+            <div class="card-image">
+                <img class="weather-background" src="resources/img/weathercard.png" />
+                <div class="weather-date" id="date">Wed 04, March 19:40</div>
+                <div class="weather-time" id="time">5, Mostly Cloudy</div>
+                <div class="weather-icon" >
+                    <div class="btn-floating btn-large light-blue">
+                        <i class="large material-icons">cloud</i>
+                    </div>
+                </div>
+            </div>
+            <!--<div class="weather-content">-->
+                <!--<p>5, Mostly Cloudy</p>-->
+
+            <!--</div>-->
+            <!--<div class="weather-picker">-->
+            <!--<a class="c-datepicker-btn"><i class="material-icons" style="color: white">menu</i></a>-->
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+    <a class="btn-floating btn-large red">
+        <i class="large material-icons">add</i>
+    </a>
+    <ul>
+        <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+        <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+        <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+        <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+    </ul>
+</div>
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="resources/js/materialize.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAeIPSp-XadKwrHVw_0qDftIWkEqCsF3jU&callback=initMap" async defer></script>
+<script type="text/javascript" src="resources/js/custom.js"></script>
+<script>
+</script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+#titleContent{
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+    position:absolute;
+    z-index: 1000;
+    color: white;
+}
+
+#title-line{
+    margin:auto;
+}
+
+.gray-layer{
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+    position:absolute;
+    background: black;
+    /*background-image: url("../img/welcomebackgroud.jpg");*/
+    filter:alpha(opacity=60); /* IE */
+    opacity: 0.6; /* Safari, Opera */
+    -moz-opacity:0.60; /* FireFox */
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    z-index: 999;
+}
+
+#map{
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+    position:absolute;
+}
+
+#input-card{
+    padding: 10px;
+    font-size: 10px;
+}
+.input-field{
+    font-size: 10px;
+}
+
+#input-row{
+    margin-bottom: 0;
+    margin-top:5px;
+}
+
+@media screen and (max-width: 600px)
+{
+    .screen-only{
+        display: none;
+    }
+}
+
+.weather-date{
+    font-size: 10px;
+    font-weight: 300;
+    top: 0;
+    left: 0;
+    padding-left: 20px;
+    padding-top: 10px;
+    position: absolute;
+    color: white;
+}
+
+.weather-time{
+    color: #fff;
+    font-size: 25px;
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    padding-bottom: 0;
+    padding-left: 18px;
+}
+
+.weather-content {
+    color: darkgray;
+    font-size: 15px;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.weather-icon{
+    right:5px;
+    bottom: -25px;
+    position: absolute;
+}
+
+.weather-picker{
+    position: absolute;
+    right:10px;
+    top:10px;
+}
+
+.weather-background{
+    height: 97px;
+}
+
